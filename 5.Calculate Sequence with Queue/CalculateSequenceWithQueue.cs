@@ -9,7 +9,7 @@ class CalculateSequenceWithQueue
     static void Main()
     {
 
-        Obi4am te pikle
+        
 
 
     }
