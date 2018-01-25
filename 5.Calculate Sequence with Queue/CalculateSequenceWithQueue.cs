@@ -10,7 +10,8 @@ class CalculateSequenceWithQueue
         var counter = 1;
         var sequence = new Queue<long>();
         var sumCollection = new Queue<long>();
-        Console.Write(current + " ");
+        var results = new List<long>();
+        results.Add(current);
 
         while (counter != 50)
         {
@@ -19,18 +20,18 @@ class CalculateSequenceWithQueue
                 case 1:
                     sequence.Enqueue(current);
                     sequence.Enqueue(1);
-                    Console.Write(sequence.Sum() + " ");
+                    results.Add(sequence.Sum());
                     sumCollection.Enqueue(sequence.Sum());
                     break;
                 case 2:
                     sequence.Enqueue(current);
-                    Console.Write(sequence.Sum() + " ");
+                    results.Add(sequence.Sum());
                     sumCollection.Enqueue(sequence.Sum());
                     break;
                 case 0:
                     sequence.Dequeue();
                     sequence.Enqueue(1);
-                    Console.Write(sequence.Sum() + " ");
+                    results.Add(sequence.Sum());
                     sumCollection.Enqueue(sequence.Sum());
                     sequence.Clear();
                     current = sumCollection.Dequeue();
@@ -38,5 +39,6 @@ class CalculateSequenceWithQueue
             }
             counter++;
         }
+        Console.WriteLine(String.Join(" ", results));
     }
 }
