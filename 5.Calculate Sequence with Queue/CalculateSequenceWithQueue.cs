@@ -38,6 +38,5 @@ class CalculateSequenceWithQueue
             }
             counter++;
         }
-        Console.WriteLine();
     }
 }
