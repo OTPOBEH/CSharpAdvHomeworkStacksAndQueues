@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.MaximumElement", "3.Maxim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.BasicQueueOperations", "4.BasicQueueOperations\4.BasicQueueOperations.csproj", "{6274A8AB-5DF8-48E4-BAA5-C881CAC3796E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.TruckTour", "6.TruckTour\6.TruckTour.csproj", "{E9DD5B2E-2155-467F-97AC-ABC9C87A09D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6274A8AB-5DF8-48E4-BAA5-C881CAC3796E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6274A8AB-5DF8-48E4-BAA5-C881CAC3796E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6274A8AB-5DF8-48E4-BAA5-C881CAC3796E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9DD5B2E-2155-467F-97AC-ABC9C87A09D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9DD5B2E-2155-467F-97AC-ABC9C87A09D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9DD5B2E-2155-467F-97AC-ABC9C87A09D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9DD5B2E-2155-467F-97AC-ABC9C87A09D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
