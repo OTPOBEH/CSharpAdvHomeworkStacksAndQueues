@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-class SimpleTextEditor
+public class SimpleTextEditor
 {
-    static void Main()
+    public static void Main(string[] args)
     {
-        var operations = int.Parse(Console.ReadLine());
-        var undoCommand = new string[2];
-        var textSequence = new Stack<char>();
+        int operations = int.Parse(Console.ReadLine());
+        Stack<string> previousStateCollection = new Stack<string>();
+        string text = string.Empty;
 
         for (int i = 0; i < operations; i++)
         {
@@ -19,33 +17,25 @@ class SimpleTextEditor
             switch (command[0])
             {
                 case "1":
-                    var stringToAppend = command[1].ToCharArray();
-                    
-
-                    undoCommand = command.ToArray();
+                    previousStateCollection.Push(text);
+                    text += command[1];
                     break;
+
                 case "2":
-                    var charactersToRemove = int.Parse(command[1]);
-
-
-                    undoCommand = command.ToArray();
+                    previousStateCollection.Push(text);
+                    var charsToRemove = int.Parse(command[1]);
+                    text = text.Substring(0, text.Length - charsToRemove);
                     break;
+
                 case "3":
-
-
-
+                    var index = int.Parse(command[1]) - 1;
+                    Console.WriteLine(text[index]);
                     break;
 
-
+                case "4":
+                    text = previousStateCollection.Pop();
+                    break;
             }
-
-
-
-
         }
-
-
-
-
     }
 }
