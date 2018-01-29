@@ -4,7 +4,7 @@ using System.Linq;
 
 class ReverseNumbers
 {
-    static void Main(string[] args)
+    static void Main()
     {
         var input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToArray();
         var inputs = new Stack<string>();

@@ -1,25 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.ReverseNumbers", "1.ReverseNumbers\1.ReverseNumbers.csproj", "{BBA65D93-2413-4011-B39E-4C8EA6DFDB68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ReverseNumbers", "1.ReverseNumbers\01.ReverseNumbers.csproj", "{BBA65D93-2413-4011-B39E-4C8EA6DFDB68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.BasicStackOperations", "2.BasicStackOperations\2.BasicStackOperations.csproj", "{818D49A0-A3A8-4A4A-A5C6-546925E7F28B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BasicStackOperations", "2.BasicStackOperations\02.BasicStackOperations.csproj", "{818D49A0-A3A8-4A4A-A5C6-546925E7F28B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.CalculateSequenceWithQueue", "5.Calculate Sequence with Queue\5.CalculateSequenceWithQueue.csproj", "{7CF329DC-931B-41A6-9672-8C417FB355E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.CalculateSequenceWithQueue", "5.Calculate Sequence with Queue\05.CalculateSequenceWithQueue.csproj", "{7CF329DC-931B-41A6-9672-8C417FB355E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.MaximumElement", "3.MaximumElement\3.MaximumElement.csproj", "{66B73C58-0385-429C-8E80-2CB6778E20DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MaximumElement", "3.MaximumElement\03.MaximumElement.csproj", "{66B73C58-0385-429C-8E80-2CB6778E20DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.BasicQueueOperations", "4.BasicQueueOperations\4.BasicQueueOperations.csproj", "{6274A8AB-5DF8-48E4-BAA5-C881CAC3796E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.BasicQueueOperations", "4.BasicQueueOperations\04.BasicQueueOperations.csproj", "{6274A8AB-5DF8-48E4-BAA5-C881CAC3796E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.TruckTour", "6.TruckTour\6.TruckTour.csproj", "{E9DD5B2E-2155-467F-97AC-ABC9C87A09D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.TruckTour", "6.TruckTour\06.TruckTour.csproj", "{E9DD5B2E-2155-467F-97AC-ABC9C87A09D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.BalancedParenthesis", "7.BalancedParenthesis\7.BalancedParenthesis.csproj", "{4EA4CD8E-66E7-4F56-BCCA-2C06F5A1B1E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.BalancedParenthesis", "7.BalancedParenthesis\07.BalancedParenthesis.csproj", "{4EA4CD8E-66E7-4F56-BCCA-2C06F5A1B1E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.RecursiveFibonacci", "8.RecursiveFibonacci\8.RecursiveFibonacci.csproj", "{CBCB0A09-BCC3-401B-A6C5-2D625CDDD409}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.RecursiveFibonacci", "8.RecursiveFibonacci\08.RecursiveFibonacci.csproj", "{CBCB0A09-BCC3-401B-A6C5-2D625CDDD409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.StackFibonacci", "9.StackFibonacci\9.StackFibonacci.csproj", "{DADAE074-A416-42F7-B70D-64E33C8A8555}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.StackFibonacci", "9.StackFibonacci\09.StackFibonacci.csproj", "{DADAE074-A416-42F7-B70D-64E33C8A8555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.SimpleTextEditor", "10.SimpleTextEditor\10.SimpleTextEditor.csproj", "{63127BC9-6C67-482C-9A63-4498B260F513}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{DADAE074-A416-42F7-B70D-64E33C8A8555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DADAE074-A416-42F7-B70D-64E33C8A8555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DADAE074-A416-42F7-B70D-64E33C8A8555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63127BC9-6C67-482C-9A63-4498B260F513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63127BC9-6C67-482C-9A63-4498B260F513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63127BC9-6C67-482C-9A63-4498B260F513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63127BC9-6C67-482C-9A63-4498B260F513}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
