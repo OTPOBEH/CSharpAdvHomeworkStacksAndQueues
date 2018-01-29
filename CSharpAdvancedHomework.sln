@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.StackFibonacci", "9.Stac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.SimpleTextEditor", "10.SimpleTextEditor\10.SimpleTextEditor.csproj", "{63127BC9-6C67-482C-9A63-4498B260F513}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.PoisonousPlants", "11.PoisonousPlants\11.PoisonousPlants.csproj", "{E677ADA7-AB24-4432-902A-2146C069EE7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{63127BC9-6C67-482C-9A63-4498B260F513}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63127BC9-6C67-482C-9A63-4498B260F513}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63127BC9-6C67-482C-9A63-4498B260F513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E677ADA7-AB24-4432-902A-2146C069EE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E677ADA7-AB24-4432-902A-2146C069EE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E677ADA7-AB24-4432-902A-2146C069EE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E677ADA7-AB24-4432-902A-2146C069EE7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
