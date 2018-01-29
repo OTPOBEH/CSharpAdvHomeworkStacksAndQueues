@@ -1,44 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-class PoisonousPlants
+public class PoisonousPlants
 {
-    static void Main()
+    public static void Main()
     {
-        var flowers = int.Parse(Console.ReadLine());
-        var input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
-        var flowerField = new Queue<int>(input);
+        var n = int.Parse(Console.ReadLine());
+        var flowerField = Console.ReadLine()?
+            .Split(new [] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(int.Parse)
+            .ToArray();
 
-        Console.WriteLine();
-        var initialCount = 0;
-        var days = 0;
-        var leftFlower = flowerField.Dequeue();
-        flowerField.Enqueue(leftFlower);
+        var days = new int[n];
+        var indexes = new Stack<int>();
+        indexes.Push(0);
 
-        while (initialCount != flowerField.Count)
-        {   
-            initialCount = flowerField.Count - 1;
+        for (int i = 1; i < flowerField?.Length; i++)
+        {
+            var maxDays = 0;
 
-            for (int i = 0; i < initialCount; i++)
+            while (indexes.Count > 0 && flowerField[indexes.Peek()] >= flowerField[i])
             {
-                var rightFlower = flowerField.Peek();
-
-                if (leftFlower < rightFlower)
-                {
-                    flowerField.Enqueue(leftFlower);
-                    leftFlower = flowerField.Dequeue();
-                }
-                else
-                {
-                    leftFlower = flowerField.Dequeue();
-                }
+                maxDays = Math.Max(maxDays, days[indexes.Pop()]);
             }
 
-            
-            days++;
+            if (indexes.Count > 0)
+            {
+                days[i] = maxDays + 1;
+            }
+
+            indexes.Push(i);
         }
+
+        Console.WriteLine(days.Max());
     }
 }
