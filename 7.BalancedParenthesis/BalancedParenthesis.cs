@@ -11,6 +11,13 @@ class BalancedParenthesis
         var checkImpression    = new Stack<char>();
         var openingParenthesis = new[] { '(', '[', '{' };
         var closingParenthesis = new[] { ')', ']', '}' };
+
+        if (input.Length % 2 != 0 || closingParenthesis.Contains(input[0]))
+        {
+            Console.WriteLine("NO");
+            return;
+        }
+
         var isBallanced = true;
 
         foreach (var currentParenthesis in input)
@@ -30,11 +37,6 @@ class BalancedParenthesis
                     break;
                 }
                 checkImpression.Pop();
-            }
-            else
-            {
-                isBallanced = false;
-                break;
             }
         }
         Console.WriteLine(isBallanced ? "YES" : "NO");
